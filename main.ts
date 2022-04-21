@@ -1,8 +1,8 @@
 console.log('Iniciando aplicación');
 
 
-import{ dataSeries } from './dataSeries.js';   // import the data from dataSeries.ts
-import { Serie } from './Serie.js';  //import the class Serie from Serie.js
+import{ dataSeries } from './dataSeries.js';
+import { Serie } from './Serie.js';  
 
 let seriesTbody: HTMLElement = document.getElementById('series')!;
 const avgSeasonsElm: HTMLElement = document.getElementById("avg-seasons")!;
@@ -23,13 +23,6 @@ function renderSeriesInTable(series: Serie[]): void {
     });
 }
 
-
-/*
-    funcion para calcular el promedio de los temporadas
-    @param series: array de series
-    @returns promedio de los temporadas
-
-*/
 
 function getAvgSeasons(series: Serie[]): number {
     let sum: number = 0;
