@@ -23,6 +23,7 @@ function renderSeriesInTable(series: Serie[]): void {
     });
 }
 
+
 /*
     funcion para calcular el promedio de los temporadas
     @param series: array de series
